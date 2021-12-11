@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateBitcoinTradesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,11 +15,10 @@ class CreateUsersTable extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('bitcoin_trades', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
-            $table->decimal('price_limit',9)->default(0);
-            $table->boolean('is_notified')->default(0);
+            $table->decimal('last_price',9);
+            $table->dateTime('current_time');
         });
     }
 
@@ -30,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('bitcoin_trades');
     }
 }
