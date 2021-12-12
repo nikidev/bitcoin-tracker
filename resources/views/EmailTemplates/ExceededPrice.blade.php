@@ -181,7 +181,7 @@
                                             <td style="padding-top:20px;padding-bottom:15px;">
                                                 <div style="font-family: sans-serif">
                                                     <div style="font-size: 12px; font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; mso-line-height-alt: 14.399999999999999px; color: #393d47; line-height: 1.2;">
-                                                        <p style="margin: 0; font-size: 12px; text-align: left;"><span style="font-size:30px;"><span style="color:#000000;font-size:25px;">${{$priceLimit}} USD</span></span></p>
+                                                        <p style="margin: 0; font-size: 12px; text-align: left;"><span style="font-size:30px;"><span style="color:#000000;font-size:25px;">${{$price_limit}} USD</span></span></p>
                                                     </div>
                                                 </div>
                                             </td>
