@@ -15,12 +15,12 @@ class UserController extends Controller
 
         if($user->wasChanged()) {
             return [
-              'message' => 'The user was saved successfully !'
+              'message' => 'Your data was updated successfully !'
             ];
         }
         else {
             return [
-                'message' => 'There was a problem saving the user !'
+                'message' => 'Your data was created successfully !'
             ];
         }
     }
