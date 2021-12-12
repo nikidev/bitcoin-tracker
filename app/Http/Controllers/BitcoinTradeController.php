@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use App\Models\BitcoinTrade;
-use Carbon\Carbon;
+use App\Services\BitcoinTradeService;
 use Illuminate\Database\Eloquent\Collection;
 
 class BitcoinTradeController extends Controller
@@ -15,8 +15,8 @@ class BitcoinTradeController extends Controller
      *
      * @return BitcoinTrade[]|Collection
      */
-    public function index(): Collection|array
+    public function index(BitcoinTradeService $service): Collection|array
     {
-        return BitcoinTrade::where('current_time', '>=', Carbon::now()->subDay())->get();
+        return $service->getLatestTrades();
     }
 }
