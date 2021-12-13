@@ -143,7 +143,7 @@
                                                         <p style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 24px;">
                                                             <span style="font-size:16px;">
                                                                 We would like to inform you that the price of BTC
-                                                                has exceeded the limit of.
+                                                                has exceeded the limit of:
                                                             </span>
                                                         </p>
                                                     </div>
