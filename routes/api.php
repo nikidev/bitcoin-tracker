@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/bitcoin-trades', [BitcoinTradeController::class, 'index']);
+Route::get('/bitcoin-last-price', [BitcoinTradeController::class, 'lastPrice']);
 Route::put('/user', [UserController::class, 'update']);
